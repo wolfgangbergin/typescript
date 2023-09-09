@@ -1,11 +1,13 @@
 globalThis.l = console.log
-let wolf = function(cbf: Function):number{
+const wolfMan = (cbf: Function, param2: number):void =>{
   let temp1 = cbf()
-    return temp1 * 2
+   globalThis.l(temp1 * param2)
 }
 
-let kim = function(cbf: Function):number{
-    return 10
+const kimbo: Function = (cbf: Function):number =>{
+    return 100
     }
 
-globalThis.l(wolf(kim))
+wolfMan(kimbo, 100)
+
+
