@@ -13,7 +13,6 @@ function printOutput(value): void {
 
 // const result  = add(5, 13);
 // let isDone = false
-
 // printOutput(result)
 
 button.addEventListener('click', function () {
