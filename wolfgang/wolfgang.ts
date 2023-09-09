@@ -17,7 +17,7 @@ function wolfFunc() {
   const num1 = 10;
   const num2 = 20;
   const result = add(num1, num2);
-  const resultObj = {
+  const resultObj: {result: number} = {
     result: result,
     print() {
       console.log(this.result);
