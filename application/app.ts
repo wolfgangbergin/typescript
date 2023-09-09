@@ -16,15 +16,25 @@ function printOutput(value): void {
 // let isDone = false
 // printOutput(result)
 
-let results = []
+const results: {result: number, print: ()=> void}[] = []
+const names = ['Max']
 
 button.addEventListener('click', function () {
   const num1 = +num1Input.value;
   const num2 = +num2Input.value;
   const result = add(num1, num2);
-  const resultObj: {result: number} = {
+  const resultObj = {
     result: result,
+    print() {
+      console.log(this.result);
+      
+    }
   };
   results.push(resultObj);
+  // results.push(5);
+
   printOutput(results);
+  results[0].print();
+
 });
+
