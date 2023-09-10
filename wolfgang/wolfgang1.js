@@ -1,11 +1,16 @@
-var tempKim = function (a) {
-    console.log(a);
-};
+var cl = console.log;
+var kimbo = { name: 'kimbo', age: 31 };
 function add2(a, b) {
     return a + b;
 }
-function printOutput2(value) {
-    console.log(value);
+var OutputMode2;
+(function (OutputMode2) {
+    OutputMode2[OutputMode2["CONSOLE"] = 0] = "CONSOLE";
+    OutputMode2[OutputMode2["ALERT"] = 1] = "ALERT";
+})(OutputMode2 || (OutputMode2 = {}));
+function printOutput2(value, printMode) {
+    printMode === OutputMode2.CONSOLE && console.log(value);
+    printMode === OutputMode2.ALERT && console.log('alertW'.concat(value));
 }
 var results2 = [];
 function wolfFunc() {
@@ -18,9 +23,10 @@ function wolfFunc() {
             console.log(this.result);
         },
     };
-    results2.push(resultObj);
-    printOutput2(results2);
-    results2[0].print(10);
+    // results2.push(resultObj);
+    // results2[0].print(10);
+    printOutput2(result, OutputMode2.CONSOLE);
+    printOutput2(result, OutputMode2.ALERT);
 }
-// wolfFunc();
-tempKim(313);
+cl(OutputMode2);
+wolfFunc();
