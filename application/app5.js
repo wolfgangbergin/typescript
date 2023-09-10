@@ -19,5 +19,5 @@ function printOutput(printMode) {
 }
 // printOutput( banana.CONSOLE);
 // printOutput( banana.ALERT);
-l(banana)
+// l(banana)
 export default 'app5'

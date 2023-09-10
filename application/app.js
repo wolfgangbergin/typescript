@@ -1,7 +1,3 @@
-import app2 from './app2.js'
-import app3 from './app3.js'
-import app4 from './app4.js'
-import app5 from './app5.js'
 var l = console.log;
 var num1Input = document.getElementById('input1');
 var num2Input = document.getElementById('input2');
@@ -15,7 +11,7 @@ var OutputMode;
     OutputMode[OutputMode["ALERT"] = 1] = "ALERT";
 })(OutputMode || (OutputMode = {}));
 function printOutput(value, printMode) {
-    if (printMode === 'CONSOLE') {
+    if (printMode === OutputMode.CONSOLE) {
         console.log(value);
     }
     else if (printMode === OutputMode.ALERT) {
@@ -37,7 +33,6 @@ button.addEventListener('click', function () {
     results.push(resultObj);
     // results.push(5);
     //   results[0].print();
-    printOutput(result, OutputMode[0]);
+    printOutput(result, OutputMode.CONSOLE);
     printOutput(result, OutputMode.ALERT);
 });
-l(OutputMode)

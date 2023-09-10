@@ -28,5 +28,4 @@ function wolfFunc() {
     printOutput2(result, OutputMode2.CONSOLE);
     printOutput2(result, OutputMode2.ALERT);
 }
-cl(OutputMode2);
 wolfFunc();
