@@ -1,5 +1,13 @@
 const cl: (...any) => void = console.log;
 
+
+interface Greetable {
+  name: string;
+  age: number;
+  permissions: string[];
+}
+
+
 class User2 {
   constructor(public name: string, private age: number) {}
   greet() {
