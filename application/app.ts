@@ -1,4 +1,6 @@
-const l: (any) => void = console.log;
+const l = console.log;
+import app2 from './app2.js';
+l('Hello from app.ts');
 
 // class User {
 //   name: string;
@@ -41,7 +43,7 @@ const user = new User('Max', 30);
 
 const num1Input = document.getElementById('input1') as HTMLInputElement;
 const num2Input = document.getElementById('input2') as HTMLInputElement;
-const button = document.getElementById('button') as HTMLButtonElement;
+const button = document.getElementById('button')!;
 
 function add(a: number, b: number) {
   return a + b;
@@ -75,7 +77,8 @@ interface CalculationContainer {
 
 type CalculationResults = CalculationContainer;
 
-const results: CalculationResults[] = [];
+const results: Array<CalculationResults> = [];
+
 const names = ['Max'];
 
 button.addEventListener('click', function () {
@@ -95,3 +98,12 @@ button.addEventListener('click', function () {
   printOutput(result, OutputMode.CONSOLE);
   printOutput(result, OutputMode.ALERT);
 });
+
+
+function logAndEcho<T>(val: T) {
+  console.log(val);
+  return val;
+}
+
+
+logAndEcho<string>('Hi there').split('      ');

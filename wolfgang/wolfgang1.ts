@@ -1,17 +1,29 @@
-const cl: (...any) => void = console.log;
+const cl = console.log;
 
-
-interface Greetable {
+type Banana = {
   name: string;
   age: number;
   permissions: string[];
+};
+
+
+
+interface Greetable2 {
+  name: string;
+
+  
+}
+interface Greet2 {
+  greet: (a: number)=> void;
 }
 
-
-class User2 {
-  constructor(public name: string, private age: number) {}
-  greet() {
-    cl(`Hi, I am ${this.name}`);
+class User2 implements Greetable2, Greet2 {
+  
+  constructor(public name: string, private age: number) {
+    
+  }
+  greet(a: number|string) {
+    cl(`Hi, I am ${this.name} and ${a} years old`);
   }
 }
 
@@ -19,7 +31,7 @@ class Admin2 extends User2 {
   private permissions: string[];
 
   constructor(
-    obj: { name: string; age: number; permissions: string[] },
+    obj: Banana,
     public password: string
   ) {
     super(obj.name, obj.age);
@@ -27,7 +39,7 @@ class Admin2 extends User2 {
   }
 }
 
-let kimbo: { name: string; age: number; permissions: string[] } = {
+let kimbo: Banana = {
   name: 'kim',
   age: 31,
   permissions: ['sports', 'cooking'],
@@ -35,8 +47,9 @@ let kimbo: { name: string; age: number; permissions: string[] } = {
 
 let kim = new Admin2(kimbo, '1234');
 
-cl(kim.name, kim.password);
-cl(kim);
+// cl(kim.name, kim.password);
+// cl(kim);
+// kim.greet('4');
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -56,21 +69,24 @@ enum OutputMode2 {
   ALERT,
 }
 
-function printOutput2(value, printMode: OutputMode2): void {
+function printOutput2(value: number, printMode: OutputMode2): void {
   printMode === OutputMode2.CONSOLE && console.log(value);
-  printMode === OutputMode2.ALERT && console.log('alertW'.concat(value));
+  printMode === OutputMode2.ALERT && console.log(`alert ${value}`);
 }
 
-type CalculationResults2 = { result: number; print: (a: number) => void };
+interface CalculationResults3 {
+  result: number;
+  print: (a: number) => void;
+}
 
-const results2: CalculationResults2[] = [];
+const results2: Array<CalculationResults3> = [];
 
 function wolfFunc() {
   const num1 = 10;
-  const num2 = 20;
+  const num2 = 23;
   const result = add2(num1, num2);
 
-  const resultObj: CalculationResults2 = {
+  const resultObj: CalculationResults3 = {
     result: result,
     print(a: number) {
       console.log(this.result);
@@ -84,4 +100,15 @@ function wolfFunc() {
   printOutput2(result, OutputMode2.ALERT);
 }
 
-// wolfFunc();
+//  wolfFunc();
+
+function logAndEcho2<T>(val: T) {
+  // console.log(val);
+  return val;
+}
+
+
+
+cl(logAndEcho2<string>('hi there').split(' '))
+cl('wolfgang313')
+cl('kim')
