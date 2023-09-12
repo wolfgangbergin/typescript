@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const l = console.log;
-l('Hello from app.ts');
+import { wolf } from './app2.js';
+l(wolf);
 class User {
-    name;
-    age;
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -17,7 +14,6 @@ class User {
     }
 }
 class Admin extends User {
-    permissions;
     constructor(name, age, permissions) {
         super(name, age);
         this.permissions = permissions;
@@ -65,4 +61,3 @@ function logAndEcho(val) {
     console.log(val);
     return val;
 }
-logAndEcho('Hi there').split('      ');

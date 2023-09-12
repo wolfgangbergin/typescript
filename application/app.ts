@@ -1,6 +1,8 @@
+
 const l = console.log;
-import app2 from './app2.js';
-l('Hello from app.ts');
+
+import {wolf} from './app2.js';
+l(wolf)
 
 // class User {
 //   name: string;
@@ -105,5 +107,3 @@ function logAndEcho<T>(val: T) {
   return val;
 }
 
-
-logAndEcho<string>('Hi there').split('      ');
