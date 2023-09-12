@@ -1,8 +1,6 @@
 "use strict";
 const cl = console.log;
 class User2 {
-    name;
-    age;
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -12,8 +10,6 @@ class User2 {
     }
 }
 class Admin2 extends User2 {
-    password;
-    permissions;
     constructor(obj, password) {
         super(obj.name, obj.age);
         this.password = password;
