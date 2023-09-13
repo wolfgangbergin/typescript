@@ -1,7 +1,7 @@
 declare global {
     function someFunction(): string;
     var someVariable: string;
-    var l: banana;
+    var l: Function;
 }
 
 let mich = 313;
