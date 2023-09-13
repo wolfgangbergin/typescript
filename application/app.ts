@@ -1,9 +1,10 @@
 
-const l = console.log;
 
-import app2 from './app2.js'; app2;
+
+ export {app2} from './app2.js'; 
 import fla22 from './app3.js';
-
+d(kim)
+//michigan<number>(313);
 
 // console.log(fla22<string>('cuba').toUpperCase());
 
@@ -20,7 +21,7 @@ import fla22 from './app3.js';
 // }
 
 interface Greetable {
-  name: string;
+  fName: string;
   greet(phrase: string): void;
 }
 
@@ -28,23 +29,23 @@ interface Printable {
   print(): void;
 }
 
-class User implements Greetable, Printable {
-  constructor(public name: string, private age: number) {}
+class User implements  Greetable, Printable {
+  constructor(public fName: string, private age: number) {}
   greet() {
-    l(`Hi, I am ${this.name}`);
+    l(`Hi, I am ${this.fName}`);
   }
   print(): void {
-    l(this.name);
+    l(this.fName);
   }
 }
 
 class Admin extends User {
-  constructor(name: string, age: number, private permissions: string[]) {
-    super(name, age);
+  constructor(fName: string, age: number, private permissions: string[]) {
+    super(fName, age);
   }
 }
 
-const user = new User('Max', 30);
+const user = new Admin('Max', 30, ['create-server']);
 
 const num1Input = document.getElementById('input1') as HTMLInputElement;
 const num2Input = document.getElementById('input2') as HTMLInputElement;

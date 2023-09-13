@@ -1,25 +1,24 @@
-const l = console.log;
-import app2 from './app2.js';
-app2;
+export { app2 } from './app2.js';
+d(kim);
 class User {
-    constructor(name, age) {
-        this.name = name;
+    constructor(fName, age) {
+        this.fName = fName;
         this.age = age;
     }
     greet() {
-        l(`Hi, I am ${this.name}`);
+        l(`Hi, I am ${this.fName}`);
     }
     print() {
-        l(this.name);
+        l(this.fName);
     }
 }
 class Admin extends User {
-    constructor(name, age, permissions) {
-        super(name, age);
+    constructor(fName, age, permissions) {
+        super(fName, age);
         this.permissions = permissions;
     }
 }
-const user = new User('Max', 30);
+const user = new Admin('Max', 30, ['create-server']);
 const num1Input = document.getElementById('input1');
 const num2Input = document.getElementById('input2');
 const button = document.getElementById('button');
