@@ -1,6 +1,6 @@
 const l = console.log;
-import { wolf } from './app2.js';
-l(wolf);
+import app2 from './app2.js';
+app2;
 class User {
     constructor(name, age) {
         this.name = name;

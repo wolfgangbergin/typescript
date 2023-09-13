@@ -1,8 +1,11 @@
 
 const l = console.log;
 
-import {wolf} from './app2.js';
-l(wolf)
+import app2 from './app2.js'; app2;
+import fla22 from './app3.js';
+
+
+// console.log(fla22<string>('cuba').toUpperCase());
 
 // class User {
 //   name: string;
