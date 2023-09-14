@@ -3,6 +3,7 @@
 //1
 //2
 //3
+//4
 export { app2 } from './app2.js';
 d(kim);
 class User {
