@@ -6,6 +6,9 @@
 //4
 //5
 //6
+//7
+//8
+//9
 export { app2 } from './app2.js';
 d(kim);
 class User {
