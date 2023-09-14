@@ -1,7 +1,4 @@
 //reset
-//1
-
-
 
  export {app2} from './app2.js'; 
 import fla22 from './app3.js';
