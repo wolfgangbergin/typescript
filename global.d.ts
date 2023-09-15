@@ -1,6 +1,8 @@
 export {};
 
 declare global {
+ 
+
  enum OutputMode {
     CONSOLE,
     ALERT
@@ -27,6 +29,8 @@ declare global {
     interface Cuba {
       age: number;
     }
+
+    type Address = (...value: any)=>void;
  
   type Number = 313
 
@@ -40,5 +44,7 @@ declare global {
     type Apple = Array<CubaType>
 
     type WolfMan = HTMLInputElement
+
+    type WolfString = string;
   
 }
