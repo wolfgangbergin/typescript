@@ -22,6 +22,7 @@
 21
 22
 23
+24
  export {app2} from './app2.js'; 
 import fla22 from './app3.js';
 d(kim)
