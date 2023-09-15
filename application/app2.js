@@ -1,5 +1,5 @@
 let mich = 313;
-const kimbo = [{ name: 'kimbo' }, 'wolf', mich];
+const kimbo = [{ name: 'kimbo' }, 'wolf',];
 globalThis.d = console.dir;
 globalThis.l = console.log;
 globalThis.someFunction = () => "some value";
@@ -14,7 +14,7 @@ globalThis.michigan = function (param1) {
     l(param1);
 };
 let cuba = 'cuba';
-// l(cuba)
-// d(kim, 313)
+globalThis.jojo = [cuba, 313, { name: 'kimbo', age: 313 }, { age: 313 }, true];
+l(jojo);
 let app2 = 'app2';
 export { app2 };

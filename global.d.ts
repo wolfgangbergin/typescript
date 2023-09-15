@@ -1,6 +1,7 @@
 export {};
 
 declare global {
+  var jojo: Apple;
     
   interface Kim {
     fName: string;
@@ -16,12 +17,21 @@ declare global {
 
   interface Banana {
     name: string | number;
-   
+    age?: number;
     }
+    interface Cuba {
+      age: number;
+    }
+ 
+  type Number = 313
+
+    type TestBoolean = true | false;
   
-    type CubaType = Banana | string | number;
+    type CubaType = Banana | string | Cuba | TestBoolean | Number;
 
 
     var michigan: <T>(param1: T) => void;
+
+    type Apple = Array<CubaType>
   
 }

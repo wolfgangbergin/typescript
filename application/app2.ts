@@ -1,7 +1,7 @@
 
 let mich = 313;
 
-const kimbo: Array<CubaType> = [{name: 'kimbo'},  'wolf' , mich];
+const kimbo: Array<CubaType> = [{name: 'kimbo'},  'wolf' , ];
 
 
 globalThis.d = console.dir;
@@ -28,10 +28,11 @@ globalThis.michigan = function(param1) {
 
 let cuba: CubaType = 'cuba'
 
-// l(cuba)
 
 
-// d(kim, 313)
+globalThis.jojo = [cuba, 313, {name: 'kimbo', age: 313 }, {age: 313}, true];
+
+l(jojo);
 
 let app2 = 'app2';
 

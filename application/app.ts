@@ -1,7 +1,9 @@
 
  export {app2} from './app2.js'; 
 import fla22 from './app3.js';
-d(kim)
+
+l(jojo)
+
 //michigan<number>(313);
 
 // console.log(fla22<string>('cuba').toUpperCase());
