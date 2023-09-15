@@ -34,6 +34,7 @@
 33;
 34;
 35;
+36;
 export { app2 } from './app2.js';
 d(kim);
 class User {
