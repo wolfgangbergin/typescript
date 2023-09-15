@@ -29,6 +29,7 @@
 28;
 29;
 30;
+banana;
 export { app2 } from './app2.js';
 d(kim);
 class User {

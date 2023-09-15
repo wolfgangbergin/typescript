@@ -29,7 +29,10 @@
 28
 29
 30
-banana
+31
+32
+33
+34
  export {app2} from './app2.js'; 
 import fla22 from './app3.js';
 d(kim)
