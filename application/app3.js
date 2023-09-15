@@ -1,4 +1,3 @@
-export default function fla(param) {
-    console.log(param);
-    return param;
-}
+"use strict";
+let app3 = false;
+l(app3);

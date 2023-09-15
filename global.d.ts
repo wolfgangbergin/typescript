@@ -1,6 +1,11 @@
 export {};
 
 declare global {
+ enum OutputMode {
+    CONSOLE,
+    ALERT
+  }
+
   var jojo: Apple;
     
   interface Kim {
@@ -33,5 +38,7 @@ declare global {
     var michigan: <T>(param1: T) => void;
 
     type Apple = Array<CubaType>
+
+    type WolfMan = HTMLInputElement
   
 }

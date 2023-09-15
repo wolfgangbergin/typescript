@@ -32,7 +32,7 @@ let cuba: CubaType = 'cuba'
 
 globalThis.jojo = [cuba, 313, {name: 'kimbo', age: 313 }, {age: 313}, true];
 
-l(jojo);
+
 
 let app2 = 'app2';
 

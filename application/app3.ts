@@ -2,9 +2,7 @@
 
 
 
+let app3 = <TestBoolean>false ;
 
-export default function fla<T>(param: T) {
+l(app3)
 
-   console.log(param)
-   return param
-}

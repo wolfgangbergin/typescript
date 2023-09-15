@@ -1,8 +1,9 @@
 
  export {app2} from './app2.js'; 
-import fla22 from './app3.js';
 
-l(jojo)
+
+
+
 
 //michigan<number>(313);
 
@@ -47,8 +48,8 @@ class Admin extends User {
 
 const user = new Admin('Max', 30, ['create-server']);
 
-const num1Input = document.getElementById('input1') as HTMLInputElement;
-const num2Input = document.getElementById('input2') as HTMLInputElement;
+const num1Input = document.getElementById('input1') as WolfMan;
+const num2Input = <WolfMan> document.getElementById('input2');
 const button = document.getElementById('button')!;
 
 function add(a: number, b: number) {
@@ -88,8 +89,8 @@ const results: Array<CalculationResults> = [];
 const names = ['Max'];
 
 button.addEventListener('click', function () {
-  const num1 = +num1Input.value;
-  const num2 = +num2Input.value;
+  const num1 = < number > +num1Input.value ;
+  const num2 = <number> +num2Input.value;
   const result = add(num1, num2);
   const resultObj: CalculationResults = {
     result: result,

@@ -1,5 +1,4 @@
 export { app2 } from './app2.js';
-l(jojo);
 class User {
     constructor(fName, age) {
         this.fName = fName;
