@@ -8,11 +8,13 @@ declare global {
     ALERT
   }
 
-  var jojo: Apple;
+
+  type Jojo = (a:string)=>string;
     
   interface Kim {
     fName: string;
-    mich: number; 
+    age: number;
+   print(value:string):string;
   }
   
   function someFunction(): string;
@@ -45,6 +47,11 @@ declare global {
 
     type WolfMan = HTMLInputElement
 
-    type WolfString = string;
-  
+  type Almost = Kim[] & number[] & string[]
+
+  type Redford = (string | number | Kim)[]
+
+  type PromiseType = Array<Kim | number | string>
+    
+ 
 }

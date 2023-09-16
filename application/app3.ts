@@ -1,22 +1,31 @@
-let wolfFunc2 = (a: number, b: string): WolfString =>{
-   console.log(`wolfFunc${a + b}`)
-   return a + b;
-}
+
+const wolfObj : Kim= {
+   fName : "wolf",
+   age : 3,
+   print(a){
+      l(this.fName);
+      return 'wolf'
+   }
+};
 
 
-let wolfFunc1: Address  = (a: any, b: any)=>{
-   console.log(`wolfFunc${a + b}`)
-   
-}
 
-let isDone: TestBoolean = false;
-let isDone2: boolean = false
 
-// l(wolfFunc2(212, '111'))
+const wolfArray: Redford = [];
 
+
+wolfArray.push(wolfObj);
+wolfArray.push('5');
+wolfArray.push(5);
+
+
+
+d(wolfArray);
+
+let fNames: PromiseType = ['wolf', 'mich', 5, wolfObj];
 
 let app3 = <TestBoolean>false ;
 
 
 
-export {app3};
+export {app3}; 

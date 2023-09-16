@@ -1,12 +1,16 @@
-let wolfFunc2 = (a, b) => {
-    console.log(`wolfFunc${a + b}`);
-    return a + b;
+const wolfObj = {
+    fName: "wolf",
+    age: 3,
+    print(a) {
+        l(this.fName);
+        return 'wolf';
+    }
 };
-let wolfFunc1 = (a, b) => {
-    console.log(`wolfFunc${a + b}`);
-};
-let isDone = false;
-let isDone2 = false;
-// l(wolfFunc2(212, '111'))
+const wolfArray = [];
+wolfArray.push(wolfObj);
+wolfArray.push('5');
+wolfArray.push(5);
+d(wolfArray);
+let fNames = ['wolf', 'mich', 5, wolfObj];
 let app3 = false;
 export { app3 };
