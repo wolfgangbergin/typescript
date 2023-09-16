@@ -1,4 +1,4 @@
-banana
+
  export {app2} from './app2.js'; 
 
  export {app3} from './app3.js';

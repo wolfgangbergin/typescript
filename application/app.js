@@ -1,4 +1,3 @@
-banana;
 export { app2 } from './app2.js';
 export { app3 } from './app3.js';
 export { app4 } from './app4.js';
