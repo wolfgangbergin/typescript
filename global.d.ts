@@ -1,57 +1,30 @@
 export {};
 
 declare global {
- 
+  var wolfObject3: {
+    CONSOLE: number;
+    ALERT: number;
+    WOLF: number;
+  };
 
- enum OutputMode {
-    CONSOLE,
-    ALERT
-  }
-
-
-  type Jojo = (a:string)=>string;
-    
-  interface Kim {
-    fName: string;
-    age: number;
-   print(value:string):string;
-  }
-  
-  function someFunction(): string;
-  var someVariable: string;
   var l: Function;
   var d: (...value: any) => void;
-  var kim: Kim, Mich;
- 
 
-  interface Banana {
-    name: string | number;
-    age?: number;
-    }
-    interface Cuba {
-      age: number;
-    }
+  type WolfMan = HTMLInputElement;
 
-    type Address = (...value: any)=>void;
- 
-  type Number = 313
+  interface Greetable {
+    fName: string;
+    age: number;
+  }
+  type kimbo = string | number;
 
-    type TestBoolean = true | false;
-  
-    type CubaType = Banana | string | Cuba | TestBoolean | Number;
+  type Almost = Array<number | string>;
 
-
-    var michigan: <T>(param1: T) => void;
-
-    type Apple = Array<CubaType>
-
-    type WolfMan = HTMLInputElement
-
-  type Almost = Kim[] & number[] & string[]
-
-  type Redford = (string | number | Kim)[]
-
-  type PromiseType = Array<Kim | number | string>
-    
- 
+  type printMode = {
+    fName: string;
+    age: number | string;
+    array1: kimbo[];
+    array2: Array<kimbo>;
+    print: (value: 313 | 212, value: wolfObject3) => void;
+  };
 }
